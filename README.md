@@ -141,3 +141,5 @@ streamlit run Task2_Streamlit_App/app.py
 🧾 License
 
 This project is released under the MIT License.
+
+Demo live link of MNIST https://mnistdeeplearnin.streamlit.app/
