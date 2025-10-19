@@ -1,18 +1,9 @@
-<<<<<<< HEAD
-=======
-# === Step : Streamlit App for Deployment ===
-"""
-To deploy the model with Streamlit, create a new file named 'mnist_app.py' and add this code:
-----------------------------------------------------------
-
->>>>>>> 0972ef6a3e8fd95e316007720bfba4671cc9b26e
 import streamlit as st
 import tensorflow as tf
 import numpy as np
 from PIL import Image
 
 st.title("🧠 MNIST Digit Classifier")
-<<<<<<< HEAD
 st.write("Upload a 28x28 grayscale image of a handwritten digit.")
 
 # Load trained model
@@ -21,14 +12,6 @@ def load_model():
     return tf.keras.models.load_model('mnist_cnn_model.keras')
 
 model = load_model()
-=======
-st.write("Upload a 28x28 grayscale iSmage of a handwritten digit.")
-
-# Load model
-@st.cache_resource
-def load_model():
-    return tf.keras.models.load_model("mnist_cnn_model.keras")
->>>>>>> 0972ef6a3e8fd95e316007720bfba4671cc9b26e
 
 uploaded_file = st.file_uploader("Upload an image", type=["png", "jpg", "jpeg"])
 
@@ -42,11 +25,3 @@ if uploaded_file is not None:
 
     st.image(image, caption=f"Predicted Digit: {pred_label}", use_container_width=True)
     st.success(f"The model predicts this digit as: {pred_label}")
-<<<<<<< HEAD
-=======
-
--------------------------------------fi---------------------
-Run the Streamlit app:
-    streamlit run mnist_app.py
-"""
->>>>>>> 0972ef6a3e8fd95e316007720bfba4671cc9b26e
