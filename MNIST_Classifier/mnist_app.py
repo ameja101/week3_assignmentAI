@@ -11,8 +11,10 @@ from PIL import Image
 st.title("🧠 MNIST Digit Classifier")
 st.write("Upload a 28x28 grayscale iSmage of a handwritten digit.")
 
-# Load trained model
-model = tf.keras.models.load_model('mnist_cnn_model')
+# Load model
+@st.cache_resource
+def load_model():
+    return tf.keras.models.load_model("mnist_cnn_model.keras")
 
 uploaded_file = st.file_uploader("Upload an image", type=["png", "jpg", "jpeg"])
 
