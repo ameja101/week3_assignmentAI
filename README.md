@@ -116,8 +116,12 @@ Matplotlib / Seaborn / Pandas
 
 Clone this repository:
 
+<<<<<<< HEAD
 git clone https://github.com/yourusername/AI_Project_Portfolio.git
 cd AI_Project_Portfolio
+=======
+git clone https://github.com/ameja101/week3_assignmentAI.git
+>>>>>>> 0972ef6a3e8fd95e316007720bfba4671cc9b26e
 
 
 Install dependencies:
