@@ -6,6 +6,12 @@ from PIL import Image
 st.title("🧠 MNIST Digit Classifier")
 st.write("Upload a 28x28 grayscale image of a handwritten digit.")
 
+
+# Compute the correct relative path (works on any OS)
+MODEL_PATH = os.path.join(os.path.dirname(__file__), "mnist_cnn_model.keras")
+
+
+
 # Load trained model
 @st.cache_resource
 def load_model():
